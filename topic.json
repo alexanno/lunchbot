@@ -1,10 +1,10 @@
 {
-  "title": "Why pedestrians do not constantly collide with each other",
-  "description": "High-density pedestrian flow experiments and physics-based modelling revealed that collision avoidance emerges from rapid gaze-direction detection and micro-trajectory adjustments happening ~0.5s before impact. The study found that removing this anticipatory step (as can occur with phone distraction) dramatically increases collision rates — aligning with real-world observations about phone usage and pedestrian accidents.",
+  "title": "A politician's BMI is a reliable proxy for their country's corruption level",
+  "description": "Analysis of post-Soviet countries found a statistically significant correlation between the obesity of government politicians (measured from photographs) and standard corruption indices. The paper suggests that in environments with pervasive corruption, officials can more openly display wealth-related behaviours — including weight — without accountability.",
   "source": "Ig Nobel Prize",
-  "year": 2020,
-  "category": "Physics",
-  "url": "https://improbable.com/ig/winners/#ig2020",
+  "year": 2021,
+  "category": "Economics",
+  "url": "https://improbable.com/ig/winners/#:~:text=obesity%20of%20a%20country%27s%20politicians",
   "week": 14,
-  "updated_at": "2026-04-01T20:53:46.301769+00:00"
+  "updated_at": "2026-04-01T21:12:39.368704+00:00"
 }
