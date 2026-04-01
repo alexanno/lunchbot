@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>🍱 Lunch Topic of the Week</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      background: #0f172a;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem 1.25rem;
+      color: #1e293b;
+    }
+
+    .container {
+      max-width: 780px;
+      width: 100%;
+    }
+
+    /* ── Header ── */
+    header {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    .header-emoji {
+      font-size: 3rem;
+      line-height: 1;
+      margin-bottom: 0.6rem;
+    }
+
+    header h1 {
+      font-size: 1.8rem;
+      font-weight: 800;
+      letter-spacing: -0.03em;
+      color: #f8fafc;
+    }
+
+    .week-label {
+      margin-top: 0.35rem;
+      font-size: 0.95rem;
+      color: #94a3b8;
+      letter-spacing: 0.02em;
+    }
+
+    /* ── Card ── */
+    .card {
+      background: #ffffff;
+      border-radius: 1.25rem;
+      overflow: hidden;
+      box-shadow: 0 32px 64px -16px rgba(0, 0, 0, 0.6),
+                  0 0 0 1px rgba(255, 255, 255, 0.04);
+    }
+
+    .card-accent {
+      height: 7px;
+      background: var(--accent, #4f46e5);
+      transition: background 0.4s ease;
+    }
+
+    .card-body {
+      padding: 2.5rem 2.75rem;
+    }
+
+    /* ── Badges ── */
+    .badges {
+      display: flex;
+      gap: 0.5rem;
+      flex-wrap: wrap;
+      margin-bottom: 1.5rem;
+    }
+
+    .badge {
+      display: inline-block;
+      font-size: 0.7rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.07em;
+      padding: 0.3rem 0.75rem;
+      border-radius: 9999px;
+    }
+
+    .badge-category {
+      background: var(--badge-bg, #ede9fe);
+      color: var(--badge-color, #5b21b6);
+    }
+
+    .badge-source {
+      background: #f0fdf4;
+      color: #15803d;
+    }
+
+    /* ── Content ── */
+    .topic-title {
+      font-size: 1.65rem;
+      font-weight: 800;
+      line-height: 1.28;
+      color: #0f172a;
+      letter-spacing: -0.03em;
+      margin-bottom: 1.25rem;
+    }
+
+    .topic-description {
+      font-size: 1.05rem;
+      line-height: 1.72;
+      color: #374151;
+      margin-bottom: 2rem;
+    }
+
+    /* ── Footer row ── */
+    .card-footer {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 1rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid #f1f5f9;
+    }
+
+    .source-info {
+      font-size: 0.875rem;
+      color: #64748b;
+    }
+
+    .source-info strong {
+      color: #1e293b;
+      font-weight: 600;
+    }
+
+    .read-more {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.3rem;
+      font-size: 0.875rem;
+      font-weight: 600;
+      color: var(--accent, #4f46e5);
+      text-decoration: none;
+      padding: 0.5rem 1.1rem;
+      border: 1.5px solid var(--accent-light, #e0e7ff);
+      border-radius: 0.625rem;
+      transition: background 0.15s, color 0.15s;
+    }
+
+    .read-more:hover {
+      background: var(--accent, #4f46e5);
+      color: #ffffff;
+    }
+
+    /* ── Page footer ── */
+    .page-footer {
+      margin-top: 1.75rem;
+      text-align: center;
+      font-size: 0.8rem;
+      color: #475569;
+      line-height: 1.6;
+    }
+
+    /* ── States ── */
+    .state {
+      padding: 3rem 1rem;
+      text-align: center;
+      color: #94a3b8;
+      font-size: 1rem;
+    }
+
+    .state.error { color: #f87171; }
+
+    .hidden { display: none !important; }
+
+    /* ── Responsive ── */
+    @media (max-width: 580px) {
+      header h1    { font-size: 1.4rem; }
+      .card-body   { padding: 1.75rem 1.5rem; }
+      .topic-title { font-size: 1.3rem; }
+      .topic-description { font-size: 0.97rem; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+
+    <header>
+      <div class="header-emoji">🍱</div>
+      <h1>Lunch Topic of the Week</h1>
+      <p class="week-label" id="week-label">Loading…</p>
+    </header>
+
+    <div class="card">
+      <div class="card-accent" id="card-accent"></div>
+      <div class="card-body">
+
+        <div id="state-loading" class="state">Fetching this week's topic…</div>
+
+        <div id="state-error" class="state error hidden">
+          ⚠️ Could not load <code>topic.json</code>.<br>
+          Run <code>python scripts/fetch_topic.py</code> to generate it, then refresh.
+        </div>
+
+        <div id="content" class="hidden">
+          <div class="badges">
+            <span class="badge badge-category" id="badge-category"></span>
+            <span class="badge badge-source"   id="badge-source"></span>
+          </div>
+
+          <h2 class="topic-title" id="topic-title"></h2>
+          <p  class="topic-description" id="topic-description"></p>
+
+          <div class="card-footer">
+            <div class="source-info">
+              <strong id="src-name"></strong> · <span id="src-year"></span>
+            </div>
+            <a id="read-more" class="read-more" href="#" target="_blank" rel="noopener noreferrer">
+              Read more →
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <p class="page-footer" id="page-footer">
+      Updated every Monday via GitHub Actions
+    </p>
+
+  </div><!-- /.container -->
+
+  <script>
+    // Map category names to accent colours
+    const PALETTE = {
+      "Biology":              ["#16a34a", "#dcfce7", "#4ade80"],
+      "Physics":              ["#2563eb", "#dbeafe", "#60a5fa"],
+      "Chemistry":            ["#ea580c", "#ffedd5", "#fb923c"],
+      "Medicine":             ["#dc2626", "#fee2e2", "#f87171"],
+      "Economics":            ["#7c3aed", "#ede9fe", "#a78bfa"],
+      "Statistical Curiosity":["#b45309", "#fef3c7", "#fbbf24"],
+      "Acoustics":            ["#0891b2", "#cffafe", "#22d3ee"],
+      "Transportation":       ["#0d9488", "#ccfbf1", "#2dd4bf"],
+      "Peace":                ["#15803d", "#dcfce7", "#4ade80"],
+      "Public Health":        ["#be185d", "#fce7f3", "#f472b6"],
+      "Perception":           ["#7c2d12", "#ffedd5", "#fb923c"],
+      "Literature":           ["#92400e", "#fef3c7", "#fbbf24"],
+    };
+
+    const DEFAULT_PALETTE = ["#4f46e5", "#ede9fe", "#818cf8"];
+
+    function palette(category) {
+      return PALETTE[category] || DEFAULT_PALETTE;
+    }
+
+    function fmtDate(iso) {
+      return new Date(iso).toLocaleDateString("en-US", {
+        month: "long", day: "numeric", year: "numeric",
+      });
+    }
+
+    async function load() {
+      try {
+        const r = await fetch("topic.json?_=" + Date.now());
+        if (!r.ok) throw new Error(r.statusText);
+        const t = await r.json();
+
+        const [accent, badgeBg, accentLight] = palette(t.category);
+
+        // Apply colours
+        document.getElementById("card-accent").style.background = accent;
+        document.documentElement.style.setProperty("--accent",       accent);
+        document.documentElement.style.setProperty("--accent-light", accentLight);
+
+        const cat = document.getElementById("badge-category");
+        cat.textContent = t.category;
+        cat.style.background = badgeBg;
+        cat.style.color      = accent;
+
+        document.getElementById("badge-source").textContent = t.source;
+        document.getElementById("topic-title").textContent  = t.title;
+        document.getElementById("topic-description").textContent = t.description;
+        document.getElementById("src-name").textContent = t.source;
+        document.getElementById("src-year").textContent = t.year;
+        document.getElementById("read-more").href       = t.url;
+
+        // Week label
+        const d = new Date(t.updated_at);
+        const month = d.toLocaleDateString("en-US", { month: "long", year: "numeric" });
+        document.getElementById("week-label").textContent = `Week ${t.week} · ${month}`;
+
+        // Page footer
+        document.getElementById("page-footer").textContent =
+          `Updated weekly every Monday via GitHub Actions · Last updated: ${fmtDate(t.updated_at)}`;
+
+        document.getElementById("state-loading").classList.add("hidden");
+        document.getElementById("content").classList.remove("hidden");
+      } catch (e) {
+        document.getElementById("state-loading").classList.add("hidden");
+        document.getElementById("state-error").classList.remove("hidden");
+      }
+    }
+
+    load();
+  </script>
+</body>
+</html>
