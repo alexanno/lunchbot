@@ -227,7 +227,9 @@
     </div>
 
     <p class="page-footer" id="page-footer">
-      Updated every Monday via GitHub Actions
+      Updated weekly every Monday via GitHub Actions · Last updated:
+      <span id="last-updated">Loading...</span> ·
+      A project by <a href="https://github.com/alexanno" target="_blank" rel="noopener noreferrer">@alexanno</a>
     </p>
 
   </div><!-- /.container -->
@@ -292,8 +294,7 @@
         document.getElementById("week-label").textContent = `Week ${t.week} · ${month}`;
 
         // Page footer
-        document.getElementById("page-footer").textContent =
-          `Updated weekly every Monday via GitHub Actions · Last updated: ${fmtDate(t.updated_at)}`;
+        document.getElementById("last-updated").textContent = fmtDate(t.updated_at);
 
         document.getElementById("state-loading").classList.add("hidden");
         document.getElementById("content").classList.remove("hidden");
