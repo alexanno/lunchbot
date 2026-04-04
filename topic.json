@@ -1,10 +1,10 @@
 {
-  "title": "Lorem ipsum dolor sit",
-  "description": "[AI-generated paper] The underlying correlation: The distance between Neptune vs Mercury and Highest Nielsen rating for a TV show each year. Lorem ipsum dolor sit",
-  "source": "Spurious Correlation (AI paper)",
-  "year": 2026,
+  "title": "Internet Explorer market share correlates with the US murder rate (r = 0.923)",
+  "description": "Internet Explorer's browser market share closely tracked the US murder rate from 2006–2011 (r = 0.923). Both declined independently over the same period. Used as a reductio-ad-absurdum argument against drawing policy conclusions from aggregate trend data without controls, and as a memorable example of why declining macroeconomic indicators often appear correlated with one another.",
+  "source": "Spurious Correlation",
+  "year": 2014,
   "category": "Statistical Curiosity",
-  "url": "https://www.tylervigen.com/spurious/correlation/1165_the-distance-between-neptune-and-mercury_correlates-with_highest-nielsen-rating-for-a-tv-show-each-year",
+  "url": "https://www.tylervigen.com/spurious-correlations",
   "week": 14,
-  "updated_at": "2026-04-04T21:39:21.140177+00:00"
+  "updated_at": "2026-04-04T21:41:46.249488+00:00"
 }
