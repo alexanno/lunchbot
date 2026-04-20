@@ -1,10 +1,10 @@
 {
-  "title": "Why pedestrians DO sometimes collide with each other",
-  "description": "A companion study to the same-year Physics prize: using mutual-anticipation models and high-density crowd experiments, researchers showed that pedestrian collisions occur when anticipatory gaze cues are ambiguous or absent — formalising when the avoidance heuristic breaks down. Together, the two 2021 prizes form an unusually self-referential pair.",
+  "title": "Why pedestrians do not constantly collide with each other",
+  "description": "High-density pedestrian flow experiments and physics-based modelling revealed that collision avoidance emerges from rapid gaze-direction detection and micro-trajectory adjustments happening ~0.5 s before impact. The study found that removing this anticipatory step (as can occur with phone distraction) dramatically increases collision rates — aligning with real-world observations about phone usage and pedestrian accidents.",
   "source": "Ig Nobel Prize",
   "year": 2021,
-  "category": "Kinetics",
-  "url": "https://improbable.com/ig/winners/#:~:text=pedestrians%20do%20sometimes%20collide",
-  "week": 16,
-  "updated_at": "2026-04-13T10:01:39.621126+00:00"
+  "category": "Physics",
+  "url": "https://improbable.com/ig/winners/#:~:text=pedestrians%20do%20not%20constantly%20collide",
+  "week": 17,
+  "updated_at": "2026-04-20T10:04:24.081274+00:00"
 }
