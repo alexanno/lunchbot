@@ -1,10 +1,10 @@
 {
-  "title": "Why pedestrians do not constantly collide with each other",
-  "description": "High-density pedestrian flow experiments and physics-based modelling revealed that collision avoidance emerges from rapid gaze-direction detection and micro-trajectory adjustments happening ~0.5 s before impact. The study found that removing this anticipatory step (as can occur with phone distraction) dramatically increases collision rates — aligning with real-world observations about phone usage and pedestrian accidents.",
-  "source": "Ig Nobel Prize",
-  "year": 2021,
-  "category": "Physics",
-  "url": "https://improbable.com/ig/winners/#:~:text=pedestrians%20do%20not%20constantly%20collide",
-  "week": 17,
-  "updated_at": "2026-04-20T10:04:24.081274+00:00"
+  "title": "Per capita cheese consumption correlates with deaths by bedsheet tangling (r = 0.947)",
+  "description": "Annual US per capita cheese consumption tracked the number of people who died by becoming tangled in their bedsheets at r = 0.947 from 2000–2009. Both variables grew over the same decade with no possible causal connection. A commonly cited counter-example to the naive claim that 'high correlation means something real', and a useful entry point for discussing confounders and ecological fallacies.",
+  "source": "Spurious Correlation",
+  "year": 2014,
+  "category": "Statistical Curiosity",
+  "url": "https://www.tylervigen.com/spurious-correlations",
+  "week": 18,
+  "updated_at": "2026-04-27T10:23:14.790099+00:00"
 }
