@@ -1,10 +1,10 @@
 {
-  "title": "Sexual orgasms can be as effective as nasal decongestants",
-  "description": "Researchers measured nasal airflow resistance immediately before and after orgasm, and at intervals up to 60 minutes later. Nasal airflow improvement was comparable to oxymetazoline spray (a standard decongestant) and lasted for approximately 45 minutes. The effect is mediated by the autonomic nervous system — a potentially side-effect-free treatment for chronic nasal congestion.",
-  "source": "Ig Nobel Prize",
-  "year": 2021,
-  "category": "Medicine",
-  "url": "https://improbable.com/ig/winners/#:~:text=sexual%20orgasms%20can%20be%20as%20effective",
-  "week": 21,
-  "updated_at": "2026-05-18T11:49:27.589427+00:00"
+  "title": "Number of Nicolas Cage films correlates with swimming pool drownings (r = 0.666)",
+  "description": "The annual count of Nicolas Cage film releases correlated with US swimming pool drowning deaths from 1999–2009 (r = 0.666). A widely shared illustration of the distinction between correlation and causation, and of how any two time series with overlapping trends will yield non-trivial correlation coefficients. Often used in data science onboarding and introductory statistics courses.",
+  "source": "Spurious Correlation",
+  "year": 2014,
+  "category": "Statistical Curiosity",
+  "url": "https://www.tylervigen.com/spurious-correlations",
+  "week": 22,
+  "updated_at": "2026-05-25T11:57:03.949706+00:00"
 }
