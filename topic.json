@@ -1,10 +1,10 @@
 {
-  "title": "US federal science spending correlates with suicides by hanging (r = 0.998)",
-  "description": "Total US spending on science, space, and technology tracked suicides by hanging, strangulation, and suffocation at r = 0.998 from 1999–2009. The near-perfect fit — achieved with zero causal mechanism — is a favourite example in discussions about reproducibility, HARKing (Hypothesising After Results Known), and why effect size thresholds alone cannot substitute for theoretical justification.",
-  "source": "Spurious Correlation",
-  "year": 2014,
-  "category": "Statistical Curiosity",
-  "url": "https://www.tylervigen.com/spurious-correlations",
-  "week": 30,
-  "updated_at": "2026-07-20T11:06:59.802175+00:00"
+  "title": "Knives manufactured from frozen human feces do not work well",
+  "description": "Inspired by an often-cited anthropological anecdote about an Inuit man allegedly crafting a knife from his own frozen faeces, researchers replicated the experiment under controlled conditions. The feces-knives failed to cut meat at any temperature tested. The study is a textbook example of empirically testing folklore, and of reproducibility applied to anthropological claims.",
+  "source": "Ig Nobel Prize",
+  "year": 2020,
+  "category": "Materials Science",
+  "url": "https://improbable.com/ig/winners/#:~:text=knives%20manufactured%20from%20frozen%20human%20feces",
+  "week": 31,
+  "updated_at": "2026-07-27T11:30:38.440000+00:00"
 }
