@@ -1,10 +1,10 @@
 {
-  "title": "Number of Nicolas Cage films correlates with swimming pool drownings (r = 0.666)",
-  "description": "The annual count of Nicolas Cage film releases correlated with US swimming pool drowning deaths from 1999–2009 (r = 0.666). A widely shared illustration of the distinction between correlation and causation, and of how any two time series with overlapping trends will yield non-trivial correlation coefficients. Often used in data science onboarding and introductory statistics courses.",
-  "source": "Spurious Correlation",
-  "year": 2014,
-  "category": "Statistical Curiosity",
-  "url": "https://www.tylervigen.com/spurious-correlations",
-  "week": 42,
-  "updated_at": "2026-10-12T17:38:54.577627+00:00"
+  "title": "A politician's BMI is a reliable proxy for their country's corruption level",
+  "description": "Analysis of post-Soviet countries found a statistically significant correlation between the obesity of government politicians (measured from photographs) and standard corruption indices. The paper suggests that in environments with pervasive corruption, officials can more openly display wealth-related behaviours — including weight — without accountability.",
+  "source": "Ig Nobel Prize",
+  "year": 2021,
+  "category": "Economics",
+  "url": "https://improbable.com/ig/winners/#:~:text=obesity%20of%20a%20country%27s%20politicians",
+  "week": 43,
+  "updated_at": "2026-10-19T15:25:30.783202+00:00"
 }
