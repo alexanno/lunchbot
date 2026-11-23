@@ -1,10 +1,10 @@
 {
-  "title": "The air inside a movie theater accurately reveals the film's age rating",
-  "description": "Chemical analysis of volatile organic compounds (VOCs) in cinema air showed that audience metabolic output varies predictably with on-screen content. Violence, sex, drug use, and bad language each produce distinct VOC signatures measurable in real time — suggesting a passive, audience-derived rating system. Tested blind against MPAA ratings with high accuracy.",
-  "source": "Ig Nobel Prize",
-  "year": 2021,
-  "category": "Chemistry",
-  "url": "https://improbable.com/ig/winners/#:~:text=chemically%20analyzing%20the%20air%20inside%20movie%20theaters",
-  "week": 47,
-  "updated_at": "2026-11-16T18:12:43.005553+00:00"
+  "title": "Internet Explorer market share correlates with the US murder rate (r = 0.923)",
+  "description": "Internet Explorer's browser market share closely tracked the US murder rate from 2006–2011 (r = 0.923). Both declined independently over the same period. Used as a reductio-ad-absurdum argument against drawing policy conclusions from aggregate trend data without controls, and as a memorable example of why declining macroeconomic indicators often appear correlated with one another.",
+  "source": "Spurious Correlation",
+  "year": 2014,
+  "category": "Statistical Curiosity",
+  "url": "https://www.tylervigen.com/spurious-correlations",
+  "week": 48,
+  "updated_at": "2026-11-23T19:59:56.691526+00:00"
 }
